@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #006eff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wadah-pesanan {
+    display: flex;
+    background-color: #FFE9C6;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 800px;
+    width: 100%;
+}
+
+.ringkasan-pesanan {
+    padding: 20px;
+    background-color: #00fff2;
+    flex: 1;
+}
+
+.detail-pesanan {
+    background-color: #FFFFFF;
+    padding: 20px;
+    flex: 1;
+}
+
+h1, h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+button.tombol-kembali {
+    background-color: #F45C5C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button.tombol-kembali:hover {
+    background-color: #E04A4A;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.info-item {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.info-item p {
+    margin: 0;
+}
+
+.harga {
+    font-weight: bold;
+}
+
+.ringkasan-total {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.ringkasan-total p {
+    margin: 5px 0;
+}
+
+.total {
+    font-size: 20px;
+    font-weight: bold;
+}
