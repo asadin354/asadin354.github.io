@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lelang Berkah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="wadah">
+            <h1>Lelang Berkah</h1>
+        </div>
+    </header>
+    
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#beranda">Beranda & Produk</a></li>
+            <li><a href="#tentang">Tentang Saya</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Konten Utama (Beranda dan Tentang Saya tidak bersampingan) -->
+    <main>
+        <!-- Bagian Beranda -->
+        <section id="beranda">
+            <h2>Selamat Datang di Lelang Berkah</h2>
+            <p>Destinasi lelang online terbaik Anda untuk berbagai produk berkualitas.</p>
+            
+            <!-- Item Lelang Utama -->
+            <div class="item-lelang">
+                <h3>Item Unggulan: Iphone 13</h3>
+                <img src="iphone.jpeg" alt="Iphone 13">
+                <p>Penawaran Saat Ini: Rp8.000.000</p>
+                <button class="tombol-penawaran">Tawar Sekarang</button>
+            </div>
+
+            <!-- Produk Lainnya -->
+            <h2>Produk Lainnya</h2>
+            <div class="item-lelang">
+                <h3>Laptop Gaming</h3>
+                <img src="laptoplegion.jpeg" alt="Laptop Gaming">
+                <p>Penawaran Saat Ini: Rp12.500.000</p>
+                <button class="tombol-penawaran">Tawar Sekarang</button>
+            </div>
+            
+            <div class="item-lelang">
+                <h3>Jam Tangan Eiger</h3>
+                <img src="jamtangan.jpeg" alt="Jam Tangan Eiger">
+                <p>Penawaran Saat Ini: Rp500.000</p>
+                <button class="tombol-penawaran">Tawar Sekarang</button>
+            </div>
+        </section>
+
+        <!-- Bagian Tentang Saya -->
+        <section id="tentang">
+            <h2>Tentang Saya</h2>
+            <img src="aku.jpg" alt="Foto Profil" class="foto-profil">
+            <p><strong>Nama:</strong> Muhammad Asadin Nur</p>
+            <p><strong>Kuliah:</strong> S1-Informatika</p>
+            <p><strong>Email:</strong> asadinnurmuhammad@gmail.com</p>
+            <p><strong>Kontak:</strong> 085751764005</p>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Lelang Berkah. Hak cipta dilindungi undang-undang.</p>
+    </footer>
+    
+    <!-- Kotak Popup -->
+    <div id="kotak-popup" class="popup" style="display: none;">
+        <div class="konten-popup">
+            <span id="tutup-popup">&times;</span>
+            <h2>Ajukan Tawaran</h2>
+            <input type="text" placeholder="Masukkan jumlah tawaran">
+            <button id="ajukan-tawaran">Ajukan Tawaran</button>
+        </div>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
