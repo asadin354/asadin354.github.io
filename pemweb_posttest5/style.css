@@ -1,0 +1,247 @@
+/* Gaya Umum */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+}
+
+/* Header */
+header {
+    background-color: #2b6777;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navbar */
+nav {
+    background-color: #3b8c88;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Membuat menu lebih fleksibel pada layar kecil */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #22636b;
+    border-radius: 5px;
+}
+
+/* Main Konten */
+main {
+    padding: 20px;
+    max-width: 1200px; /* Batas maksimum lebar konten */
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Pusatkan konten */
+}
+
+/* Bagian Item Lelang */
+.item-lelang {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 8px;
+    background-color: #eef3f7;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    max-width: 300px;
+}
+
+.item-lelang img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Tombol Umum */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    background-color: #2b6777;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+/* Gaya Foto Profil */
+.foto-profil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Gaya Popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Background transparan */
+    z-index: 1000;
+}
+
+.konten-popup {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+}
+
+#tutup-popup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Gaya Form Lelang */
+.form-lelang {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #eef3f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-lelang label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-lelang input,
+.form-lelang textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.form-lelang textarea {
+    resize: vertical;
+}
+
+.form-lelang button {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-lelang button:hover {
+    background-color: #218838;
+}
+
+/* Responsivitas */
+/* Ukuran layar besar */
+@media (min-width: 992px) {
+    main {
+        padding: 40px;
+    }
+
+    .item-lelang {
+        width: 80%; /* Ubah lebar item lelang agar tampil vertikal */
+        margin: 20px auto;
+    }
+}
+
+/* Ukuran layar sedang (tablet) */
+@media (min-width: 768px) and (max-width: 991px) {
+    main {
+        padding: 30px;
+    }
+
+    .item-lelang {
+        width: 80%;
+    }
+}
+
+/* Ukuran layar kecil (ponsel) */
+@media (max-width: 767px) {
+    header {
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .item-lelang {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    button {
+        padding: 8px 12px;
+    }
+}
+
+/* Responsif untuk popup */
+@media (max-width: 600px) {
+    .konten-popup {
+        width: 90%;
+    }
+}
